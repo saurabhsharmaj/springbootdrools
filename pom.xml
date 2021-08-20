@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -8,14 +9,14 @@
 	<artifactId>boot-drools</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	
+
 	<name>boot-drools</name>
 	<description>Demo project for Spring Boot Drools</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<kie.version>6.1.0.Final</kie.version>
+		<kie.version>7.58.0.Final</kie.version>
 	</properties>
 
 
@@ -42,8 +43,20 @@
 			<artifactId>kie-ci</artifactId>
 			<version>${kie.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.drools/drools-core -->
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-core</artifactId>
+			<version>${kie.version}</version>			
+		</dependency>
 
-	</dependencies>	
+
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-templates</artifactId>
+			<version>${kie.version}</version>			
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
