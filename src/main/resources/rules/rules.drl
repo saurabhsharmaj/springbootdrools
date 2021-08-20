@@ -1,6 +1,6 @@
 package rules
  
-import com.javainuse.model.Product
+import com.ebit.model.Product
 rule "Offer for Diamond"
 	when 
 		productObject: Product(type=="diamond")

@@ -25,7 +25,7 @@ public class JewelleryShopController {
 		Product product = new Product();
 		product.setType(type);	
 
-		jewelleryShopService.getProductDiscount(product);
+		product = jewelleryShopService.getProductDiscount(product);
 
 		return product;
 	}
