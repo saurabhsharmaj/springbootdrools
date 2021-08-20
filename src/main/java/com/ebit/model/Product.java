@@ -1,4 +1,4 @@
-package com.javainuse.model;
+package com.ebit.model;
 
 public class Product {
 

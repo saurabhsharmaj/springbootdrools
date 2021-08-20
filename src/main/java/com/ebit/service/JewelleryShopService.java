@@ -1,11 +1,11 @@
-package com.javainuse.service;
+package com.ebit.service;
 
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.javainuse.model.Product;
+import com.ebit.model.Product;
 
 @Service
 public class JewelleryShopService {

@@ -1,4 +1,4 @@
-package com.javainuse.controller;
+package com.ebit.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javainuse.model.Product;
-import com.javainuse.service.JewelleryShopService;
+import com.ebit.model.Product;
+import com.ebit.service.JewelleryShopService;
 
 @RestController
 public class JewelleryShopController {
@@ -23,7 +23,7 @@ public class JewelleryShopController {
 	public Product getQuestions(@RequestParam(required = true) String type) {
 
 		Product product = new Product();
-		product.setType(type);
+		product.setType(type);	
 
 		jewelleryShopService.getProductDiscount(product);
 
